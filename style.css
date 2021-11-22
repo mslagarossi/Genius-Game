@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin:0;
+    background-color: #221c28;
+}
+
+#comeco_corpo{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1BBBA;
+    display: visible;
+}
+
+#comeco{
+    visibility: visible;
+    /*height: 50vh;
+    width: 50vw;*/
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#comeco h2{
+    text-align: center;
+    color: #221c28;
+}
+
+#comeco a{
+    background-color: #221c28;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#comeco a:hover{
+    opacity: 0.6;
+}
+
+#corpo{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+}
+
+#fim{
+    position: fixed;
+    left: 24%;
+    top: 25%;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#botao_recomecar{
+    background-color: #221c28;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+#botao_recomecar:hover{
+    opacity: 0.6;
+}
+
+#pontuacao{
+    position: fixed;
+    background: #FFF;
+    width: 10%;
+    border-radius: 20px;
+    padding: 30px 0px 30px 20px;
+    left: 7%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#pontuacao h5, p{
+    font-size: 1.5em;
+}
+
+#pontuacao_total{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.main-game{ /*essas configurações permitem que toda a tela seja selecionada sem os scrolls*/
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho' /*vai dar um nome para cada um dos containers*/
+    'amarelo azul';
+    grid-gap: 10px;/*espaço entre cada área*/
+    border: 1px solid #221c28;
+    background-color: #221c28;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue{
+    grid-area: azul; /*indica qual área determinada no grid ela vai ocupar*/
+    background-color: #b7bfdb;
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: #d4aeb2;
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area:amarelo;
+    background-color: #f1eff6;
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: verde;
+    background-color: #8abcbc;
+    border-top-left-radius: 100%;
+}
+
+.selected{
+    opacity: 0.4;
+}

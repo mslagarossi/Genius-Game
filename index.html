@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Genesis</title>
+</head>
+<body>
+    <div id="comeco_corpo">
+        <div id="comeco">
+            <h2>Bem vindo ao jogo Gênesis, clique no botão abaixo para iniciar um novo jogo</h2>
+            <a href="#" onclick="playGame()" id="comecar_jogo">COMEÇAR O JOGO</a>
+        </div>
+    </div>
+    <div id="corpo">
+        <div id="fim">
+            <h4>Você não conseguiu seguir a sequência :(</h4>
+            <h4>Você conseguiu fazer: </h4>
+            <div id="pontuacao_total"><p id="pontuacao_final">0 </p></div>
+            <a href="#" onclick="menu()" id="botao_recomecar">Jogar novamente</a>
+        </div>
+    </div>
+    <div id="pontuacao">
+        <h5>Pontuação:</h5>
+        <p id="pontos">0</p>
+    </div>
+    <div class="main-game">
+        <div class="genius">
+            <div class="blue"></div>
+            <div class="yellow"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
